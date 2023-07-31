@@ -43,7 +43,7 @@ export async function getManifest() {
     content_scripts: [
       {
         matches: [
-          '<all_urls>',
+          'https://online.bloodontheclocktower.com/*',
         ],
         js: [
           'dist/contentScripts/index.global.js',
@@ -55,6 +55,10 @@ export async function getManifest() {
         resources: ['dist/contentScripts/style.css'],
         matches: ['<all_urls>'],
       },
+      {
+        resources: ['/.assets/*'],
+        matches: ['<all_urls>'],
+      }
     ],
     content_security_policy: {
       extension_pages: isDev

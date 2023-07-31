@@ -1,6 +1,6 @@
 {
-  "name": "vitesse-webext",
-  "displayName": "Vitesse WebExt",
+  "name": "clocktracker-extension",
+  "displayName": "ClockTracker Extension",
   "version": "0.0.1",
   "private": true,
   "description": "[description]",
